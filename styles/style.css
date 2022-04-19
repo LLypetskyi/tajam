@@ -1,0 +1,105 @@
+nav {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+/* hitted navbar */
+ html[data-scroll='not-top'] nav {
+  background-color:rgba(65,48,108,0.5) ;
+  transition: 0.3ms;
+  height: 150px;} 
+
+nav .content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.logo {
+  height: 50px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li a {
+  color: white;
+  padding: 10px 15px;
+  font: 900 13px 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+  transition: color 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: #10c9c3;
+}
+
+header {
+  background-image: linear-gradient(to top,rgba(9,5,47,0.9),rgba(49,29,94,0.9)),url('../assets/images/back-image.png');
+  /* background-image: url(../assets/images/back-image.png); */
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+header .content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header .content .header-legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+header .content h1{
+text-align: center;
+font: 900 32px 'PlayfairDisplay' sans-serif;
+letter-spacing: 0.32px;
+color: white;
+}
+header .content p{
+text-align: center;
+font: 300 14px 'Roboto', sans-serif;
+letter-spacing: 0.7px;
+color: white;
+margin-top: 50px;
+margin-bottom: 50px;
+width: 50%;
+}
+
+
+section.story{
+  background: white;
+  padding: 100px 0;
+}
+
+section.story .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.story .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.story .content .story-logo{
+  height: 230px;
+}
+
+
+/* section story .story-content .left{
+  width: 60%;
+
+} */
