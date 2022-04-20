@@ -25,6 +25,7 @@
 }
 .primary-button:hover {
   background: #d6f3f2;
+  opacity: 0.3;
 }
 
 .separator{

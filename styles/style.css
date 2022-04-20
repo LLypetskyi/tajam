@@ -45,11 +45,9 @@ nav ul li a:hover {
 }
 
 header {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(9, 5, 47, 0.8),
-      rgba(49, 29, 94, 0.8)
-    ),
+      rgba(49, 29, 94, 0.8)),
     url('../assets/images/back-image.png');
   /* background-image: url(../assets/images/back-image.png); */
   background-repeat: no-repeat;
@@ -71,18 +69,21 @@ header .content .header-legend {
   align-items: center;
   justify-content: center;
 }
-header .content .header-legend .separator{
+
+header .content .header-legend .separator {
   background-color: #00e0d0;
 
 }
+
 header .content h1 {
   text-align: center;
-  font: 900 32px 'PlayfairDisplay' sans-serif;
+  font: 900 32px 'PlayfairDisplay', serif;
   letter-spacing: 0.32px;
   color: white;
   margin-bottom: 20px;
   margin-top: 100px;
 }
+
 header .content p {
   text-align: center;
   font: 300 14px 'Roboto', sans-serif;
@@ -97,17 +98,20 @@ section.story {
   background: white;
   padding: 100px 0;
 }
+
 section.story .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 section.story .container .content .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 section.story .content .story-logo {
   height: 230px;
 }
@@ -117,40 +121,44 @@ section.story .container .content .wrapper .left {
   text-align: right;
   margin-right: 100px;
 }
+
 section.story .container .content .wrapper .right {
   display: flex;
   width: 60%;
   flex-direction: column;
   margin-bottom: 30px;
 }
+
 section.story .container .content .wrapper .right h2 {
-  font: 900 32px 'PlayfairDisplay' sans-serif;
+  font: 900 22px 'PlayfairDisplay', serif;
   letter-spacing: 1.1px;
   text-align: left;
   color: #413d4b;
 }
+
 section.story .container .content .wrapper .right .text {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 section.story .container .content .wrapper .right .text p {
-  font: 300 14px 'Roboto' sans-serif;
+  font: 300 14px 'Roboto', sans-serif;
   letter-spacing: 0.42px;
   text-align: left;
   color: rgba(65, 61, 75, 0.75);
   opacity: 0.75;
 }
+
 section.watch-story {
-  background-image: linear-gradient(
-      to top,
+  background-image: linear-gradient(to top,
       rgba(9, 5, 47, 0.8),
-      rgba(49, 29, 94, 0.8)
-    ),
+      rgba(49, 29, 94, 0.8)),
     url('../assets/images/put-your-image-here@3x.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
 }
+
 section.watch-story .content {
   display: flex;
   justify-content: center;
@@ -158,6 +166,7 @@ section.watch-story .content {
   height: 100%;
   position: relative;
 }
+
 section.watch-story .watch-story-logo {
   position: absolute;
   margin: auto;
@@ -168,14 +177,17 @@ section.watch-story .watch-story-logo {
   z-index: 3;
   cursor: pointer;
 }
+
 section.watch-story .watch-story-logo {
   height: 100px;
 }
+
 section.watch-story .watch-story-legend {
   margin-top: 170px;
 }
+
 section.watch-story .content .watch-story-legend h3 {
-  font: 900 16px 'Roboto';
+  font: 900 16px 'Roboto', sans-serif;
   letter-spacing: 0.8px;
   text-align: center;
   color: white;
@@ -186,36 +198,131 @@ section.expertise {
   background: white;
   padding: 70px 0;
 }
+
 section.expertise .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 section.expertise .container .content h2 {
-  font: 900 22px 'PlayfairDisplay';
+  font: 900 22px 'PlayfairDisplay', serif;
   letter-spacing: 1.1px;
   text-align: left;
   color: #413d4b;
 }
 
 section.expertise .container .content p {
-  font: 14px 'PlayfairDisplay';
+  font: 14px 'PlayfairDisplay', serif;
   letter-spacing: 1.05px;
   text-align: center;
   color: rgba(47, 45, 53, 0.75);
   opacity: 0.75;
   margin: 20px 0px;
 }
-section.expertise .content .expertise-items{
+
+section.expertise .content .expertise-items {
   display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-top: 80px;
 }
-section.expertise .content .expertise-item{
+
+section.expertise .content .expertise-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width:calc(33.3% - 2px);
+  padding: 25px 25px;
+}
+
+section.expertise .content .expertise-item .expertise-item-img {
+  height: 50px;
+}
+
+section.expertise .content .expertise-item h4{
+  font: 900 14px 'Roboto', sans-serif;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: #413d4b;
+  padding: 30px 30px 0px;
+}
+
+section.expertise .content .expertise-item p{
+  font: 300 14px 'Roboto', sans-serif;
+  opacity: 0.75;
+  letter-spacing: 0.7px;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.75);
+}
+
+section.team {
+  background-image: linear-gradient(to top,
+      rgba(9, 5, 47, 0.8),
+      rgba(49, 29, 94, 0.8)),
+    url('../assets/images/team-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+section.team .container{
+  padding: 70px 0px 70px;
+}
+section.team .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-section.expertise .content .expertise-item .expertise-item-img{
-  height: 50px;
+.team-legend-heder{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.team h1{
+  font: 900 22px 'PlayfairDisplay', serif;
+  letter-spacing: 1.1px;
+  text-align: center;
+  color: white;
+}
+section.team p{
+  font: 14px 'PlayfairDisplay', serif;
+  letter-spacing: 1.05px;
+  text-align: center;
+  color: #f9f9f9;
+  margin: 20px 0px;
+}
+
+section.team .separator{
+  background-color: white;
+}
+section.team .content .team-legend .team-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px;
+}
+section.team .content .team-legend .team-items .team-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e1e1e1;
+  margin: 10px;
+}
+section.team .content .team-legend .team-items .team-item .team-item-photo{
+  height: 220px;
+}
+section.team .content .team-legend p{
+font: 300 14px 'Roboto', serif;
+letter-spacing: 0.7px;
+text-align: center;
+color: #f3f3f3;
+padding: 20px;
 }
