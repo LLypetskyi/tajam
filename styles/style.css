@@ -281,9 +281,7 @@ section.team {
   background-size: cover;
   height: 100%;
 }
-/* section.team .container {
-  padding: 70px 0px 70px;
-} */
+
 section.team .content {
   display: flex;
   flex-direction: column;
@@ -373,10 +371,13 @@ section.works .works-items {
   flex-wrap: wrap;
 }
 section.works .work-item-photo {
-  height: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 section.works .work-item {
-width: calc (100%/6);
+height: 200px;
+width: calc(100% / 6);
 }
 section.works .botton {
   display: flex;
