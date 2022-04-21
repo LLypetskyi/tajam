@@ -1,5 +1,4 @@
 nav {
-  /* height: 120px; */
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +10,6 @@ nav {
 html[data-scroll='not-top'] nav {
   background-color: rgba(65, 48, 108, 1.8);
   transition: 0.3ms;
-  height: 120px;
 }
 
 nav .content {
@@ -19,7 +17,6 @@ nav .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 30px;
 }
 
 .logo {
@@ -51,7 +48,6 @@ header {
       rgba(49, 29, 94, 0.8)
     ),
     url('../assets/images/back-image.png');
-  /* background-image: url(../assets/images/back-image.png); */
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -89,6 +85,7 @@ header .content p {
   text-align: center;
   font: 300 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
+  line-height: 1.71;
   color: white;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -98,8 +95,7 @@ header .content .points {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
-  margin-bottom: 70px;
+  margin: 120px 0px 70px 0px;
 }
 
 header .content .point {
@@ -168,6 +164,7 @@ section.story .container .content .wrapper .right .text {
 section.story .container .content .wrapper .right .text p {
   font: 300 14px 'Roboto', sans-serif;
   letter-spacing: 0.42px;
+  line-height: 1.57;
   text-align: left;
   color: rgba(65, 61, 75, 0.75);
   opacity: 0.75;
@@ -182,9 +179,9 @@ section.watch-story {
     url('../assets/images/put-your-image-here@3x.png');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 50vh;
+  min-height: 550px;
 }
-
 section.watch-story .content {
   display: flex;
   justify-content: center;
@@ -231,7 +228,7 @@ section.expertise .container .content h2 {
   text-align: left;
   color: #413d4b;
 }
-section.expertise .container .content p {
+section.expertise .container .content > p {
   font: 14px 'PlayfairDisplay', serif;
   letter-spacing: 1.05px;
   text-align: center;
@@ -260,14 +257,16 @@ section.expertise .content .expertise-item .expertise-item-img {
 section.expertise .content .expertise-item h4 {
   font: 900 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
+  line-height: 1.57;
   text-align: center;
   color: #413d4b;
-  padding: 30px 30px 0px;
+  margin: 30px 0px;
 }
-section.expertise .content .expertise-item p {
+section.expertise .content .expertise-items .expertise-item > p {
   font: 300 14px 'Roboto', sans-serif;
   opacity: 0.75;
   letter-spacing: 0.7px;
+  line-height: 1.57;
   text-align: center;
   color: rgba(51, 51, 51, 0.75);
 }
@@ -282,16 +281,20 @@ section.team {
   background-size: cover;
   height: 100%;
 }
-section.team .container {
+/* section.team .container {
   padding: 70px 0px 70px;
-}
+} */
 section.team .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 70px;
 }
-.team-legend-heder {
+section.team .team-legend{
+  margin-top: 70px;
+}
+section.team .team-legend-heder {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -368,16 +371,12 @@ section.works .works-legend p {
 section.works .works-items {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 section.works .work-item-photo {
-  width: 100%;
-  height: 100%;
-}
-section.works .works-item {
   height: 200px;
-  width: calc (100% / 6);
-  box-sizing: border-box;
+}
+section.works .work-item {
+width: calc (100%/6);
 }
 section.works .botton {
   display: flex;
@@ -408,22 +407,23 @@ section.quote .content h2 {
   opacity: 0.9;
   color: rgb(255, 255, 255);
 }
-section.quote .content p{
+section.quote .content p {
   font: 16px 'PlayfairDisplay', serif;
   opacity: 0.85;
   letter-spacing: 0.4px;
+  line-height: 1.63;
   color: white;
   padding-bottom: 50px;
   text-align: center;
-  }
+}
 
-section.quote .content h4{
+section.quote .content h4 {
   font: 900 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
   color: #fff;
   text-align: center;
 }
-section.quote .content h5{
+section.quote .content h5 {
   font: 300 13px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
   opacity: 0.7;

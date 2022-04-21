@@ -16,16 +16,15 @@
   color: #00e0d0;
   font: 16px 'HammersmithOne', sans-serif;;
   border:  solid 2px #00e0d0;
-  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: uppercase;
   transition: all 0.3s ease;
+  background: transparent
 }
 .primary-button:hover {
-  background: #d6f3f2;
-  opacity: 0.3;
+  background: transparent
 }
 
 .separator{
