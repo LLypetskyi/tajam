@@ -51,8 +51,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  /* height: 50vh; */
-  /* min-height: 670px; */
 }
 
 header .content {
@@ -120,20 +118,17 @@ section.story {
   background: white;
   padding: 100px 0;
 }
-
 section.story .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 section.story .container .content .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 section.story .content .story-logo {
   height: 230px;
 }
@@ -143,26 +138,22 @@ section.story .container .content .wrapper .left {
   text-align: right;
   margin-right: 100px;
 }
-
 section.story .container .content .wrapper .right {
   display: flex;
   width: 60%;
   flex-direction: column;
   margin-bottom: 30px;
 }
-
 section.story .container .content .wrapper .right h2 {
   font: 900 22px 'PlayfairDisplay', serif;
   letter-spacing: 1.1px;
   text-align: left;
   color: #413d4b;
 }
-
 section.story .container .content .wrapper .right .text {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-
 section.story .container .content .wrapper .right .text p {
   font: 300 14px 'Roboto', sans-serif;
   letter-spacing: 0.42px;
@@ -214,6 +205,7 @@ section.watch-story .content .watch-story-legend h3 {
   color: white;
   text-transform: uppercase;
 }
+
 section.expertise {
   background: white;
   padding: 70px 0;
@@ -272,6 +264,7 @@ section.expertise .content .expertise-items .expertise-item > p {
   text-align: center;
   color: rgba(51, 51, 51, 0.75);
 }
+
 section.team {
   background-image: linear-gradient(
       to top,
@@ -283,7 +276,6 @@ section.team {
   background-size: cover;
   height: 100%;
 }
-
 section.team .content {
   display: flex;
   flex-direction: column;
@@ -291,7 +283,7 @@ section.team .content {
   align-items: center;
   padding-bottom: 70px;
 }
-section.team .team-legend{
+section.team .team-legend {
   margin-top: 70px;
 }
 section.team .team-legend-heder {
@@ -330,7 +322,6 @@ section.team .content .team-legend .team-items .team-item {
   border: 1px solid #e1e1e1;
   margin: 10px;
 }
-
 section.team .content .team-legend .team-items .team-item h4 {
   font: 900 14px 'Roboto', sans-serif;
   opacity: 0.75;
@@ -348,6 +339,7 @@ section.team .content .team-legend p {
   text-align: center;
   color: hsl(0, 0%, 95%);
 }
+
 section.works {
   padding: 70px 0px;
 }
@@ -379,8 +371,8 @@ section.works .work-item-photo {
   object-fit: cover;
 }
 section.works .work-item {
-height: 200px;
-width: calc(100% / 6);
+  height: 200px;
+  width: calc(100% / 6);
 }
 section.works .botton {
   display: flex;
@@ -403,7 +395,6 @@ section.quote {
   align-items: center;
   text-align: center;
 }
-
 section.quote .content h2 {
   font: 300 100px 'PlayfairDisplay', serif;
   opacity: 0.9;
@@ -419,7 +410,6 @@ section.quote .content p {
   padding-bottom: 50px;
   text-align: center;
 }
-
 section.quote .content h4 {
   font: 900 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
@@ -434,30 +424,29 @@ section.quote .content h5 {
   padding: 13px 0px;
   text-align: center;
 }
-section.quote .content .quote-imgs{
+section.quote .content .quote-imgs {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   margin: 70px 0px;
 }
-
-section.quote .content .quote-imgs .marks{
+section.quote .content .quote-imgs .marks {
   height: 20px;
   width: 10px;
   color: white;
 }
-section.quote .content .quote-imgs .quote-img>img {
+section.quote .content .quote-imgs .quote-img > img {
   margin: 7px;
   height: 45px;
   width: 45px;
 }
-section.quote .content .quote-imgs .quote-img-active>img{
+section.quote .content .quote-imgs .quote-img-active > img {
   height: 70px;
   width: 70px;
   margin: 7px;
 }
-section.quote .content .quote-imgs i{
+section.quote .content .quote-imgs i {
   height: 10px;
   width: 10px;
   border: solid white;
@@ -466,13 +455,14 @@ section.quote .content .quote-imgs i{
   padding: 3px;
 }
 section.quote .content .quote-imgs .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
 }
 section.quote .content .quote-imgs .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
 }
+
 section.feedback .content {
   display: flex;
 }
@@ -484,7 +474,7 @@ section.feedback .right {
   margin: 70px 0px 70px 70px;
   width: 50%;
 }
-section.feedback .left h2{
+section.feedback .left h2 {
   font: 900 22px 'PlayfairDisplay', serif;
   letter-spacing: 1.1px;
   text-align: left;
@@ -492,20 +482,126 @@ section.feedback .left h2{
   margin-bottom: 15px;
 }
 section.feedback .left .data {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-section.feedback .left .data input, textarea{
+section.feedback .left .data input,
+textarea {
   margin: 10px 0px;
   padding: 20px;
 }
 
-section.feedback .left .data .primary-button{
-  width: 25%;
+section.feedback input, textarea {
+  width: 100%;
+  border: 1px solid rgba(65, 61, 75, 0.5);
+  box-sizing: border-box;
+  resize: none;
 }
-section.feedback .right h2{
+ section.feedback input::placeholder, 
+section.feedback textarea::placeholder {
+  text-align: left;
+  font: 300 14px 'Roboto', sans-serif;
+  opacity: 0.5;
+  letter-spacing: 0.7px;
+}  
+
+
+section.feedback .left .data .primary-button {
+  width: 25%;
+  margin-top: 10px;
+}
+section.feedback .right h2 {
   font: 900 22px 'PlayfairDisplay', serif;
   letter-spacing: 1.1px;
   text-align: left;
   color: #413d4b;
+}
+
+footer {
+  background-image: linear-gradient(
+      to top,
+      rgba(9, 5, 47, 0.8),
+      rgba(49, 29, 94, 0.8)
+    ),
+    url('../assets/images/footer-image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+footer .topiks {
+  display: flex;
+}
+footer .topiks .left {
+  width: calc(100% / 3);
+  color: #fff;
+  margin: 80px 0px;
+}
+footer .topiks .left p,
+footer .topiks .center p {
+  font: 300 14px 'Roboto', serif;
+  line-height: 1.86;
+  letter-spacing: 0.35px;
+  text-align: left;
+  margin-right: 20px;
+}
+
+footer .topiks .left p {
+  margin-top: 40px;
+}
+footer .topiks .center {
+  width: calc(100% / 3);
+  color: #fff;
+  margin: 100px 0px;
+}
+footer .topiks .center p {
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+footer .topiks .center h4,
+footer .topiks .right h4 {
+  font: 900 15px 'Roboto', serif;
+  line-height: 1.86;
+  letter-spacing: 0.35px;
+  text-align: left;
+}
+footer .topiks .right {
+  width: calc(100% / 3);
+  color: #fff;
+  margin: 100px 0px;
+}
+footer .topiks .right .box {
+  padding: 17px;
+  margin: 40px 0px;
+  border: 1px solid #fff;
+  font: 300 15px 'Roboto', serif;
+  letter-spacing: 0.7px;
+  text-align: left;
+  opacity: 0.75;
+}
+footer .under {
+  display: flex;
+  color: #fff;
+  margin-bottom: 70px;
+}
+footer .under .left{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+}
+footer .under .left h5{
+  font: 14px 'Roboto', serif;
+  letter-spacing: 0.35px;
+}
+footer .under .right{
+  width: 50%;
+}
+footer .under .right p {
+  font: 14px 'Roboto', serif;
+  letter-spacing: 0.35px;
+  text-align: right;
 }
