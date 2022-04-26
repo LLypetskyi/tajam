@@ -11,6 +11,7 @@
 }
 
 .primary-button {
+  min-width: 120px;
   cursor: pointer;
   padding: 15px 15px;
   color: #00e0d0;
@@ -22,6 +23,7 @@
   text-decoration: uppercase;
   transition: all 0.3s ease;
   background: transparent
+
 }
 .primary-button:hover {
   background: transparent

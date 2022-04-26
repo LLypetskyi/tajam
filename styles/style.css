@@ -4,6 +4,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 1000;
+  padding: 30px 0px;
 }
 
 /* hitted navbar */
@@ -47,10 +48,16 @@ header {
       rgba(9, 5, 47, 0.8),
       rgba(49, 29, 94, 0.8)
     ),
-    url('../assets/images/back-image.png');
+    url(../assets/images/back-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
+  padding: 70px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 header .content {
@@ -60,45 +67,40 @@ header .content {
   align-items: center;
   justify-content: center;
 }
-
 header .content .header-legend {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 header .content .header-legend .separator {
   background-color: #00e0d0;
 }
-
 header .content h1 {
   text-align: center;
   font: 900 32px 'PlayfairDisplay', serif;
   letter-spacing: 0.32px;
   color: white;
   margin-bottom: 20px;
-  margin-top: 100px;
 }
-
 header .content p {
   text-align: center;
   font: 300 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
   line-height: 1.71;
   color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0px;
   width: 50%;
 }
-header .content .points {
+header .points {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin: 120px 0px 0px 0px;
+  margin-top: 0;
+  margin-left: 0;
+  position: absolute;
 }
-
-header .content .point {
+header .point {
   height: 10px;
   width: 10px;
   margin: 5px;
@@ -106,7 +108,7 @@ header .content .point {
   box-sizing: border-box;
   border-radius: 50%;
 }
-header .content .active-point {
+header .active-point {
   height: 10px;
   width: 10px;
   margin: 5px;
@@ -132,17 +134,16 @@ section.story .container .content .wrapper {
 section.story .content .story-logo {
   height: 230px;
 }
-
 section.story .container .content .wrapper .left {
   width: 40%;
-  text-align: right;
-  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 section.story .container .content .wrapper .right {
   display: flex;
   width: 60%;
   flex-direction: column;
-  margin-bottom: 30px;
 }
 section.story .container .content .wrapper .right h2 {
   font: 900 22px 'PlayfairDisplay', serif;
@@ -174,6 +175,8 @@ section.watch-story {
   background-size: cover;
   height: 50vh;
   min-height: 550px;
+  /* padding: 70px 0px; */
+  display: flex;
 }
 section.watch-story .content {
   display: flex;
@@ -182,28 +185,34 @@ section.watch-story .content {
   height: 100%;
   position: relative;
 }
-section.watch-story .watch-story-logo {
+section.watch-story .content .show-video {
   position: absolute;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 3;
-  cursor: pointer;
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-section.watch-story .watch-story-logo {
+section.watch-story .content .show-video .watch-story-img {
+  background: transparent;
+  border-radius: 50px;
   height: 100px;
+  width: 100px;
 }
-section.watch-story .watch-story-legend {
-  margin-top: 170px;
+section.watch-story .content .show-video .watch-story-logo {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  object-fit: cover;
 }
 section.watch-story .content .watch-story-legend h3 {
   font: 900 16px 'Roboto', sans-serif;
   letter-spacing: 0.8px;
-  text-align: center;
   color: white;
   text-transform: uppercase;
+  margin-top: 30px;
 }
 
 section.expertise {
@@ -275,16 +284,16 @@ section.team {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  padding: 70px 0px;
 }
 section.team .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 70px;
 }
 section.team .team-legend {
-  margin-top: 70px;
+  width: 100%;
 }
 section.team .team-legend-heder {
   display: flex;
@@ -310,7 +319,7 @@ section.team .separator {
 }
 section.team .content .team-legend .team-items {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 70px 0px;
 }
@@ -332,6 +341,7 @@ section.team .content .team-legend .team-items .team-item h4 {
 }
 section.team .content .team-legend .team-items .team-item .team-item-photo {
   height: 220px;
+  width: 100%;
 }
 section.team .content .team-legend p {
   font: 300 14px 'Roboto', serif;
@@ -462,17 +472,18 @@ section.quote .content .quote-imgs .left {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
-
+section.feedback {
+  padding: 70px 0px;
+}
 section.feedback .content {
   display: flex;
+  justify-content: space-between;
 }
 section.feedback .left {
-  margin: 70px 10px 70px 0px;
-  width: 50%;
+  width: calc(50% - 5px);
 }
 section.feedback .right {
-  margin: 70px 0px 70px 70px;
-  width: 50%;
+  width: calc(50% - 5px);
 }
 section.feedback .left h2 {
   font: 900 22px 'PlayfairDisplay', serif;
@@ -490,22 +501,20 @@ textarea {
   margin: 10px 0px;
   padding: 20px;
 }
-
-section.feedback input, textarea {
+section.feedback input,
+textarea {
   width: 100%;
   border: 1px solid rgba(65, 61, 75, 0.5);
   box-sizing: border-box;
   resize: none;
 }
- section.feedback input::placeholder, 
+section.feedback input::placeholder,
 section.feedback textarea::placeholder {
   text-align: left;
   font: 300 14px 'Roboto', sans-serif;
   opacity: 0.5;
   letter-spacing: 0.7px;
-}  
-
-
+}
 section.feedback .left .data .primary-button {
   width: 25%;
   margin-top: 10px;
@@ -587,17 +596,17 @@ footer .under {
   color: #fff;
   margin-bottom: 70px;
 }
-footer .under .left{
+footer .under .left {
   width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: left;
 }
-footer .under .left h5{
+footer .under .left h5 {
   font: 14px 'Roboto', serif;
   letter-spacing: 0.35px;
 }
-footer .under .right{
+footer .under .right {
   width: 50%;
 }
 footer .under .right p {
