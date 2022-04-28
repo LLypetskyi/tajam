@@ -12,22 +12,18 @@ html[data-scroll='not-top'] nav {
   background-color: rgba(65, 48, 108, 1.8);
   transition: 0.3ms;
 }
-
 nav .content {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   height: 50px;
 }
-
 nav ul {
   display: flex;
 }
-
 nav ul li a {
   color: white;
   padding: 10px 15px;
@@ -36,12 +32,10 @@ nav ul li a {
   letter-spacing: 0.33px;
   transition: color 0.3s ease;
 }
-
 nav ul li a.active,
 nav ul li a:hover {
   color: #10c9c3;
 }
-
 header {
   background-image: linear-gradient(
       to top,
@@ -52,38 +46,46 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  position: relative;
-  padding: 70px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
-
 header .content {
   height: 100%;
+  display: flex; 
+}
+header .content .header-slider {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slick-dotted.slick-slider {
+  margin-bottom: 70px;
+}
+
+header .content .header-slider-item {
+  min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-header .content .header-legend {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-header .content .header-legend .separator {
+header .header-slider .header-slider-item .separator {
   background-color: #00e0d0;
 }
-header .content h1 {
+header .header-slider .header-slider-item h1 {
   text-align: center;
   font: 900 32px 'PlayfairDisplay', serif;
   letter-spacing: 0.32px;
   color: white;
   margin-bottom: 20px;
 }
-header .content p {
+header .header-slider .header-slider-item .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+header .header-slider .header-slider-item p {
   text-align: center;
   font: 300 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
@@ -92,15 +94,8 @@ header .content p {
   margin: 50px 0px;
   width: 50%;
 }
-header .points {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0;
-  margin-left: 0;
-  position: absolute;
-}
-header .point {
+header .point,
+ul.slick-dots>li {
   height: 10px;
   width: 10px;
   margin: 5px;
@@ -108,7 +103,9 @@ header .point {
   box-sizing: border-box;
   border-radius: 50%;
 }
-header .active-point {
+header .active-point,
+li.slick-active {
+  font-size: 0px;
   height: 10px;
   width: 10px;
   margin: 5px;
@@ -120,6 +117,7 @@ section.story {
   background: white;
   padding: 100px 0;
 }
+
 section.story .content {
   display: flex;
   flex-direction: column;
@@ -411,7 +409,7 @@ section.quote .content h2 {
   color: rgb(255, 255, 255);
   margin-top: 70px;
 }
-section.quote .content p {
+section.quote .text-slider p {
   font: 16px 'PlayfairDisplay', serif;
   opacity: 0.85;
   letter-spacing: 0.4px;
@@ -456,6 +454,7 @@ section.quote .content .quote-imgs .quote-img-active > img {
   width: 70px;
   margin: 7px;
 }
+
 section.quote .content .quote-imgs i {
   height: 10px;
   width: 10px;
@@ -557,7 +556,6 @@ footer .topiks .center p {
   text-align: left;
   margin-right: 20px;
 }
-
 footer .topiks .left p {
   margin-top: 40px;
 }
