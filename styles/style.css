@@ -454,7 +454,11 @@ section.quote .content .quote-imgs .quote-img-active > img {
   width: 70px;
   margin: 7px;
 }
-
+section.quote .content .quote-imgs .quote-img > img:active{
+  height: 70px;
+  width: 70px;
+  margin: 7px;
+}
 section.quote .content .quote-imgs i {
   height: 10px;
   width: 10px;

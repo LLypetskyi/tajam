@@ -21,16 +21,18 @@ $(document).ready(function () {
 $('.text-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: false,
+  arrows: true,
   fade: true,
   asNavFor: '.img-slider',
 });
 $('.img-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 6,
   asNavFor: '.text-slider',
   dots: true,
   arrows: true,
   centerMode: true,
+  centerPadding: '70px',
   focusOnSelect: true,
 });
