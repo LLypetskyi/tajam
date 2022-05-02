@@ -15,24 +15,23 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
   });
-});
 
-// add qoute slider
-$('.text-slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  arrows: true,
-  fade: true,
-  asNavFor: '.img-slider',
-});
-$('.img-slider').slick({
-  infinite: true,
-  slidesToShow: 5,
-  slidesToScroll: 6,
-  asNavFor: '.text-slider',
-  dots: true,
-  arrows: true,
-  centerMode: true,
-  centerPadding: '70px',
-  focusOnSelect: true,
+  // add qoute slider
+  $('.text-slider').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    appendArrows: $('.img-slider'),
+    asNavFor: '.img-slider',
+  });
+  $('.img-slider').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 0,
+    dots: false,
+    arrows: false,
+    asNavFor: '.text-slider',
+  });
 });

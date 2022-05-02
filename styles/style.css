@@ -94,6 +94,7 @@ header .header-slider .header-slider-item p {
   margin: 50px 0px;
   width: 50%;
 }
+
 header .point,
 ul.slick-dots>li {
   height: 10px;
@@ -237,13 +238,13 @@ section.expertise .container .content > p {
   opacity: 0.75;
   margin: 20px 0px;
 }
-section.expertise .content .expertise-items {
+section.expertise .expertise-items {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   margin-top: 80px;
 }
-section.expertise .content .expertise-item {
+section.expertise .expertise-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,10 +253,10 @@ section.expertise .content .expertise-item {
   width: calc(33.3% - 2px);
   padding: 25px 25px;
 }
-section.expertise .content .expertise-item .expertise-item-img {
+section.expertise .expertise-item .expertise-item-img {
   height: 50px;
 }
-section.expertise .content .expertise-item h4 {
+section.expertise .expertise-item h4 {
   font: 900 14px 'Roboto', sans-serif;
   letter-spacing: 0.7px;
   line-height: 1.57;
@@ -263,7 +264,7 @@ section.expertise .content .expertise-item h4 {
   color: #413d4b;
   margin: 30px 0px;
 }
-section.expertise .content .expertise-items .expertise-item > p {
+section.expertise .expertise-items .expertise-item > p {
   font: 300 14px 'Roboto', sans-serif;
   opacity: 0.75;
   letter-spacing: 0.7px;
@@ -439,42 +440,30 @@ section.quote .content .quote-imgs {
   align-content: center;
   margin: 70px 0px;
 }
-section.quote .content .quote-imgs .marks {
+section.quote .quote-imgs .marks {
   height: 20px;
   width: 10px;
   color: white;
 }
-section.quote .content .quote-imgs .quote-img > img {
+section.quote .quote-imgs .quote-img > img {
   margin: 7px;
   height: 45px;
   width: 45px;
 }
-section.quote .content .quote-imgs .quote-img-active > img {
+section.quote  .quote-imgs .slick-slide .slick-active .quote-img img{
   height: 70px;
   width: 70px;
   margin: 7px;
+  background-color:aquamarine ;
 }
-section.quote .content .quote-imgs .quote-img > img:active{
-  height: 70px;
-  width: 70px;
-  margin: 7px;
+
+section.quote .img-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-section.quote .content .quote-imgs i {
-  height: 10px;
-  width: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-section.quote .content .quote-imgs .right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-section.quote .content .quote-imgs .left {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
+
+
 section.feedback {
   padding: 70px 0px;
 }
